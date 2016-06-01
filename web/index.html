@@ -27,6 +27,14 @@
 	position: relative;
 	top:0px;
 }
+.activator{
+	animation: orbital 20s infinite linear;
+	
+}
+@keyframes orbital {
+    from { transform: rotate(360deg) translateX(20px) rotate(-360deg) scale(1.1); }
+    to   { transform: rotate(0deg) translateX(20px) rotate(0deg) scale(1.1); }
+}
 </style>
 <html>
 <head>
@@ -43,58 +51,45 @@
 
 
 		<!-- ENCABEZADO INICIA -->
+		<div class="row valign-wrapper" id="encabezado">
+			<div class="col l3 offset-l2 m3 offset-m2 s12 offset-s0">
+				<img src="./img/logotipoElferNuevo.png" alt="Logo Industrias Metálicas Elfer" class="responsive-img valign">
+				<h3 class='hide'>Industrias Metálicas Elfer</h3>
+			</div>
+			<div class="col l3 offset-l2 m3 offset-m2 s12 offset-s0">
+				<img src="./img/contacto.png" alt="" class="responsive-img valign">
+			</div>
+		</div>
+
+		<div class="row valign-wrapper blue-grey darken-4 hide-on-small-only" id="menu">
+			<div class="col m12 valign">
+				<a href="index.html" class="opcionmenu">Inicio</a>
+				<a href="infraestructura.html" class="opcionmenu">Infraestructura</a>
+        <a href="productos.html" class="opcionmenu">Productos</a>
+        <a href="servicios.html" class="opcionmenu">Servicios</a>
+				<a href="clientes.html" class="opcionmenu">Clientes</a>
+				<a href="contacto.html" class="opcionmenu">Contacto</a>
+			</div>
+		</div>
 
 		<div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1">
 			<div class="col s12 blue-grey darken-4">
 				<!-- Dropdown Trigger -->
-				<a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Inicio</span></a>
-
+				<a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Servicios</span></a>
+				
 				<!-- Dropdown Structure -->
 				<ul id='dropdown1' class='dropdown-content blue-grey darken-3'>
-					<li><a class="active" href="index.html">Inicio</a></li>
+					<li><a class="white-text" href="index.html">Inicio</a></li>
 					<li><a class="white-text" href="infraestructura.html">Infraestructura</a></li>
-					<li><a class="white-text" href="productos.html">Productos</a></li>
-					<li><a class="white-text" href="servicios.html">Servicios</a></li>
+          <li><a class="white-text" href="productos.html">Productos</a></li>
+          <li><a class="active" href="servicios.html">Servicios</a></li>
 					<li><a class="white-text" href="clientes.html">Clientes</a></li>
 					<li><a class="white-text" href="contacto.html">Contactos</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="row valign-wrapper blue-grey darken-4 hide-on-small-only" id="menu">
-			<div class="col m12 valign">
-				<a href="index.html" class="opcionmenu">Inicio</a>
-				<a href="infraestructura.html" class="opcionmenu">Infraestructura</a>
-				<a href="productos.html" class="opcionmenu">Productos</a>
-				<a href="servicios.html" class="opcionmenu">Servicios</a>
-				<a href="clientes.html" class="opcionmenu">Clientes</a>
-				<a href="contacto.html" class="opcionmenu">Contacto</a>
-			</div>
-		</div>
 		<!-- ENCABEZADO TERMINA -->
 
-		<!-- ENCABEZADO INICIA -->
-		<h3 class='hide'>Industrias Metálicas Elfer</h3>
-		<div class="row" id="encabezado">
-			<div class="col m3 offset-m2">
-				<img src="./img/logotipoElferNuevo.png" alt="Logo Industrias Metálicas Elfer" class="responsive-img valign">
-			</div>
-			<div class="col m5 right-align">
-				<img src="img/contacto.png" alt="contacto" style="margin-top:2em;"><br>
-
-				<a href="index.html"><img src="img/inicio.png" alt="Inicio" class="imagenmenu"></a>
-				<a href="infraestructura.html"><img src="img/infraestructura.png" alt="Infraestructura" class="imagenmenu"></a>
-				<a href="productos.html"><img src="img/productos.png" alt="Productos" class="imagenmenu"></a>
-				<a href="servicios.html"><img src="img/servicios.png" alt="Servicios" class="imagenmenu"></a>
-				<a href="clientes.html"><img src="img/clientes.png" alt="Clientes" class="imagenmenu"></a>
-				<a href="contacto.html"><img src="img/contacto-menu.png" alt="Contacto" class="imagenmenu"></a>
-			</div>
-		</div>
-
-		<div class="row valign-wrapper blue-grey darken-4 hide-on-small-only" id="menu">
-			<div class="col m12 valign">
-				<div id="titulomenu">&nbsp;</div>
-			</div>
-		</div>
 
 		<div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1">
 			<div class="col s12 blue-grey darken-4">
@@ -119,9 +114,9 @@
 			<ul class="slides">
 				<li>
 					<img src="img/fachada-slider.jpg">
-					<div class="caption center-align">
+					<div class="caption center-align orange-text">
 						<h3>Industrias metálicas Elfer</h3>
-						<h5 class="light grey-text text-lighten-3">aquí un pequeño subtítulo</h5>
+						<h5 class="light">aquí un pequeño subtítulo</h5>
 					</div>
 				</li>
 				<li>
@@ -140,9 +135,11 @@
 				</li>
 			</ul>
 		</div>
-
-
-
+		<div class="row">
+			<div class="col s12 center-align">
+				<img src="img/iso9001.png" alt="ISO9001" id="imageniso">
+			</div>
+		</div>
 
 
 		<div class="row">
@@ -152,11 +149,69 @@
 		</div>
 
 		<div class="row">
-			<div class="col l3 m6 s12 offset-l2 orange accent-4 white-text z-depth-2 anim-politicadecalidad">
+			<div class="col m12 l8 offset-l2">
+				<div class="row">
+					<div class="col m4">
+						<div class="card anima-card1">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/mantenimientocard.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Mantenimiento industrial<i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Mantenimiento industrial<i class="material-icons right">close</i></span>
+								<p>Ofrecemos los servicios de mantenimiento correctivo y/o preventivo del equipo de manejo de materiales;
+								además de la fabricación de equipo de manejo de materiales como racks, dollies, contenedores, Pin Pallet,
+								Rampas, Plataformas, Canastillas, etc.</p>
+								<p><a href="servicios.html#Mantenimiento">Ver más</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="card anima-card2">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/pinturaelectrocard.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Pintura electrostática<i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Pintura electrostática<i class="material-icons right">close</i></span>
+								<p>La pintura electrostática, también conocido como "pintura en polvo", es utilizada comúnmente en la industria 
+									del metal para crear un acabado uniforme y duradero en los metales y algunos plásticos que evitan las
+									burbujas que pueden ocurrir con las tradicionales pinturas líquidas. Se utiliza en muchos plásticos y todo tipo de metal.</p>
+								<p><a href="servicios.html#Pintura">Ver más</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="card anima-card3">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/diseniocard.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Diseño<i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Diseño<i class="material-icons right">close</i></span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nemo est corrupti, tempore cumque 
+									cum earum facilis consectetur totam voluptate dignissimos asperiores sint aperiam. Earum neque, 
+									maiores debitis? Molestias, quos.</p>
+								<p><a href="servicios.html#Diseño">Ver más</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col m4 offset-m2 s12 orange accent-4 white-text z-depth-2 anim-politicadecalidad">
 				<h2 class="right-align hide-on-small-only">POLÍTICA<BR>DE<BR>CALIDAD</h2>
 				<h5 class="right-align hide-on-med-and-up">POLÍTICA DE CALIDAD</h5>
 			</div>
-			<div class="col m5 offset-m1 flow-text anim-textocentrado">
+			<div class="col m4 s12 flow-text anim-textocentrado">
 				<div class="hide-on-med-and-up">&nbsp;</div>
 				En <b class="orange-text accent-4">Industrias Metálicas Elfer</b> nos comprometemos a mantener el sistema de 
 				gestión de la calidad, para cumplir con los requisitos del servicio solicitado por nuestros clientes, con un 
@@ -189,6 +244,16 @@
 	} },
 	{selector: '.anim-eslogan', offset: 0, callback: function() {
 		$(".anim-eslogan").addClass('animated zoomIn');
+		$("#imageniso").addClass('animated swing');
+	} },
+	{selector: '.anima-card1', offset: 200, callback: function() {
+		$(".anima-card1").addClass('animated fadeInLeft');
+	} },
+	{selector: '.anima-card2', offset: 200, callback: function() {
+		$(".anima-card2").addClass('animated fadeInUp');
+	} },
+	{selector: '.anima-card3', offset: 200, callback: function() {
+		$(".anima-card3").addClass('animated fadeInRight');
 	} },
 	];
 	Materialize.scrollFire(options);
