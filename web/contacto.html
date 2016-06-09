@@ -133,9 +133,16 @@
 		} },
 		];
 		Materialize.scrollFire(options);
+    
     if ($("#fachada").height()>100) {
       $("#mapa").height($("#fachada").height())
     }
+
+    $(window).resize(function(event) {
+      if ($("#fachada").height()>100) {
+        $("#mapa").height($("#fachada").height())
+      }
+    });
 		$(document).dblclick(function(){location.reload()});
 	</script>
 </body>
