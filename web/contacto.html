@@ -63,16 +63,16 @@ html{
     <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1">
       <div class="col s12 blue-grey darken-4">
         <!-- Dropdown Trigger -->
-        <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Servicios</span></a>
+        <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Contacto</span></a>
         
         <!-- Dropdown Structure -->
         <ul id='dropdown1' class='dropdown-content blue-grey darken-3'>
           <li><a class="white-text" href="index.html">Inicio</a></li>
           <li><a class="white-text" href="infraestructura.html">Infraestructura</a></li>
           <li><a class="white-text" href="productos.html">Productos</a></li>
-          <li><a class="active" href="servicios.html">Servicios</a></li>
+          <li><a class="white-text" href="servicios.html">Servicios</a></li>
           <li><a class="white-text" href="clientes.html">Clientes</a></li>
-          <li><a class="white-text" href="contacto.html">Contactos</a></li>
+          <li><a class="active" href="contacto.html">Contactos</a></li>
         </ul>
       </div>
     </div>
@@ -80,10 +80,10 @@ html{
 
 
 		<div class="row">
-      <div class="col m5 offset-m1">
+      <div class="col m5 offset-m1 hide-on-small-only">
         <img class="materialboxed responsive-img" id="fachada" src="img/fachada.jpg">
       </div>
-      <div class="col m5">
+      <div class="col m5 s12">
 				<iframe class="blue-grey" id=mapa src="https://www.google.com/maps/d/embed?mid=1F9WRa1-e3qxfAO4D2z-HCLFH2oU" 
         frameborder="0" style="border:0;width:100%;height:500px" allowfullscreen></iframe>
       </div>
@@ -93,7 +93,7 @@ html{
 
 
 		<div class="row animacionformulario">
-			<div class="col m8 offset-m2">
+			<div class="col m8 offset-m2 s10 offset-s1">
 				<div class="card blue-grey z-depth-2" style="padding:2em;">
 					<h4 class="white-text">Contacto:</h4>
 					<div class="input-field">
@@ -143,11 +143,15 @@ html{
     
     if ($("#fachada").height()>100) {
       $("#mapa").height($("#fachada").height())
+    }else{
+      $("#mapa").height(400)
     }
 
     $(window).resize(function(event) {
       if ($("#fachada").height()>100) {
         $("#mapa").height($("#fachada").height())
+      }else{
+        $("#mapa").height(400)
       }
     });
 		$(document).dblclick(function(){location.reload()});
