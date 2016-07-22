@@ -23,6 +23,9 @@ html{
 	padding: 50px 0px;
 	margin-top: 100px;
 }
+.idiomas{
+  cursor: pointer;
+}
 </style>
 <html>
 <head>
@@ -41,13 +44,13 @@ html{
     <!-- ENCABEZADO INICIA -->
     <div class="row valign-wrapper white" id="encabezado">
       <div class="col m8 offset-m2 s12 offset-s0">
-        <img src="img/logotipoElferNuevo2.svg" alt="Logo Industrias Metálicas Elfer" class="responsive-img valign" onerror="this.src='img/logotipoElferNuevo2.jpg'">
+        <img src="img/logotipoElferNuevo2.png" alt="Logo Industrias Metálicas Elfer" class="responsive-img valign">
         <h3 class='hide'>Industrias Metálicas Elfer</h3>
       </div>
     </div>
 
     <div class="row valign-wrapper blue-grey darken-4 hide-on-small-only" id="menu">
-      <div class="col m12 valign">
+      <div class="col m12 valign es">
         <a href="index.html" class="opcionmenu">Inicio</a>
         <a href="infraestructura.html" class="opcionmenu">Infraestructura</a>
         <a href="productos.html" class="opcionmenu">Productos</a>
@@ -55,9 +58,25 @@ html{
         <a href="clientes.html" class="opcionmenu">Clientes</a>
         <a href="contacto.html" class="opcionmenu">Contacto</a>
       </div>
+      <div class="col m12 valign en">
+        <a href="index.html" class="opcionmenu">Home</a>
+        <a href="infraestructura.html" class="opcionmenu">Infrastructure</a>
+        <a href="productos.html" class="opcionmenu">Products</a>
+        <a href="servicios.html" class="opcionmenu">Services</a>
+        <a href="clientes.html" class="opcionmenu">Clients</a>
+        <a href="contacto.html" class="opcionmenu">Contact</a>
+      </div>
+      <div class="col m12 valign jp">
+        <a href="index.html" class="opcionmenu">スタート</a>
+        <a href="infraestructura.html" class="opcionmenu">インフラ</a>
+        <a href="productos.html" class="opcionmenu">製品</a>
+        <a href="servicios.html" class="opcionmenu">サービス</a>
+        <a href="clientes.html" class="opcionmenu">取引先</a>
+        <a href="contacto.html" class="opcionmenu">連絡先</a>
+      </div>
     </div>
 
-    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1">
+    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1 es">
       <div class="col s12 blue-grey darken-4">
         <!-- Dropdown Trigger -->
         <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Contacto</span></a>
@@ -69,7 +88,39 @@ html{
           <li><a class="white-text" href="productos.html">Productos</a></li>
           <li><a class="white-text" href="servicios.html">Servicios</a></li>
           <li><a class="white-text" href="clientes.html">Clientes</a></li>
-          <li><a class="active" href="contacto.html">Contactos</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1 en">
+      <div class="col s12 blue-grey darken-4">
+        <!-- Dropdown Trigger -->
+        <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Contact</span></a>
+        
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content blue-grey darken-3'>
+          <li><a class="white-text" href="index.html">Home</a></li>
+          <li><a class="white-text" href="infraestructura.html">Infrastructure</a></li>
+          <li><a class="white-text" href="productos.html">Products</a></li>
+          <li><a class="white-text" href="servicios.html">Services</a></li>
+          <li><a class="white-text" href="clientes.html">Clients</a></li>
+          <li><a class="active" href="contacto.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1 jp">
+      <div class="col s12 blue-grey darken-4">
+        <!-- Dropdown Trigger -->
+        <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">連絡先</span></a>
+        
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content blue-grey darken-3'>
+          <li><a class="white-text" href="index.html">スタート</a></li>
+          <li><a class="white-text" href="infraestructura.html">インフラ</a></li>
+          <li><a class="white-text" href="productos.html">製品</a></li>
+          <li><a class="white-text" href="servicios.html">サービス</a></li>
+          <li><a class="white-text" href="clientes.html">取引先</a></li>
+          <li><a class="active" href="contacto.html">連絡先</a></li>
         </ul>
       </div>
     </div>
@@ -92,21 +143,34 @@ html{
     <div class="row animacionformulario">
      <div class="col m8 offset-m2 s10 offset-s1">
       <div class="card blue-grey z-depth-2" style="padding:2em;">
-       <h4 class="white-text">Contacto:</h4>
-       <div class="input-field">
-        <label for="nombre">Nombre</label>
-        <input id="nombre" style="background:white;" type="text">
+        <div id="formulario">
+         <h4 class="white-text es">Contacto:</h4>
+         <h4 class="white-text en">Contact:</h4>
+         <h4 class="white-text jp">連絡先:</h4>
+         <div class="input-field">
+          <label for="nombre" class="es">Nombre</label>
+          <label for="nombre" class="en">Name</label>
+          <label for="nombre" class="jp">氏名</label>
+          <input id="nombre" style="background:white;" type="text" required>
+        </div>
+        <div class="input-field">
+          <label for="email" class="es">email</label>
+          <label for="email" class="en">email</label>
+          <label for="email" class="jp">電子メール</label>
+          <input id="email" type="email" style="background:white;" required>
+        </div>
+        <div class="input-field">
+          <label for="comentario" class="es">Comentario</label>
+          <label for="comentario" class="en">Content</label>
+          <label for="comentario" class="jp">ご意見等</label>
+          <textarea name="comentario" id="comentario" style="background:white;" class="materialize-textarea" required></textarea>
+        </div>
+        <div class="input-field right-align">
+          <button class="btn waves-effect waves-light"  id="enviar"><span class="es">Enviar</span><span class="en">Send</span><span class="jp">送信</span> <i class="material-icons right">send</i></button>
+        </div>
       </div>
-      <div class="input-field">
-        <label for="email">email</label>
-        <input id="email" type="email" style="background:white;">
-      </div>
-      <div class="input-field">
-        <label for="comentario">Comentario</label>
-        <textarea name="comentario" id="comentario" style="background:white;" class="materialize-textarea"></textarea>
-      </div>
-      <div class="input-field right-align">
-        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar <i class="material-icons right">send</i></button>
+
+      <div id="resultados">        
       </div>
     </div>
   </div>
@@ -116,39 +180,37 @@ html{
 
 
 <!-- PIE DE PAGINA INICIA -->
-<div class="row blue-grey darken-3" id="piedepagina">
-  <div class="container">
-    <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
-      <p class="center-align">
-        <img src="img/location.png" width=60>
-      </p>
-      <div class="card blue-grey darken-1" style="height:5px;"></div>
-      <p class="center-align">Circuito Logistics Lote 5 y 6</p>
-      <p class="center-align">Cluster Industrial Logistics</p>
-      <p class="center-align">Cerritos, Silao, Guanajuato C.P. 36270</p>
-    </div>
+    <div class="row blue-grey darken-3" id="piedepagina">
+      <div class="container">
+        <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
+          <p class="center-align"><img src="img/location.png" width=60></p>
+          <div class="card blue-grey darken-1" style="height:5px;"></div>
+          <p class="center-align">Circuito Logistics Lote 5 y 6</p>
+          <p class="center-align">Cluster Industrial Logistics</p>
+          <p class="center-align">Cerritos, Silao, Guanajuato C.P. 36270</p>
+        </div>
 
-    <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
-      <p class="center-align">
-        <img src="img/translate.png" width=60>
-      </p>
-      <div class="card blue-grey darken-1" style="height:5px;"></div>
-      <p class="center-align"><img src="img/spanishflag.png" alt=""> &nbsp; Español</p>
-      <p class="center-align"><img src="img/americanflag.png" alt=""> &nbsp; English</p>
-      <p class="center-align"><img src="img/japanesseflag.png" alt=""> &nbsp; 日本語</p>
-    </div>
+        <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
+          <p class="center-align"><img src="img/translate.png" width=60></p>
+          <div class="card blue-grey darken-1" style="height:5px;"></div>
+          <p class="center-align idiomas" id=spanish><img src="img/spanishflag.png" alt=""> &nbsp; Español</p>
+          <p class="center-align idiomas" id=english><img src="img/americanflag.png" alt=""> &nbsp; English</p>
+          <p class="center-align idiomas" id=japanese><img src="img/japanesseflag.png" alt=""> &nbsp; 日本語</p>
+        </div>
 
-    <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
-      <p class="center-align">
-        <img src="img/contact.png" width=60>
-      </p>
-      <div class="card blue-grey darken-1" style="height:5px;"></div>
-      <p class="center-align">Oficina: (472) 688 0007</p>
-      <p class="center-align">Oficina: (472) 688 0008</p>
-      <p class="center-align">email: sac@industriaselfer.com.mx</p>
+        <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
+          <p class="center-align"><img src="img/contact.png" width=60></p>
+          <div class="card blue-grey darken-1" style="height:5px;"></div>
+          <p class="center-align es">Oficina: (472) 688 0007</p>
+          <p class="center-align es">Oficina: (472) 688 0008</p>
+          <p class="center-align en">Office: (472) 688 0007</p>
+          <p class="center-align en">Office: (472) 688 0008</p>
+          <p class="center-align jp">事務所電話: (472) 688 0007</p>
+          <p class="center-align jp">事務所電話: (472) 688 0008</p>
+          <p class="center-align">電子メール: sac@industriaselfer.com.mx</p>
+        </div>
+      </div>    
     </div>
-  </div>    
-</div>
 <!-- PIE DE PAGINA TERMINA -->
 
 </div>
@@ -188,7 +250,84 @@ $(window).resize(function(event) {
     $("#mapa").height(400)
   }
 });
-$(document).dblclick(function(){location.reload()});
+
+
+$("#enviar").click(function(){
+  var errores=0
+
+  $("#nombre,#email,#comentario").removeClass('animated shake')
+
+  if ($("#nombre").val()=='') {
+    $("#nombre").addClass('animated shake').focus()
+    errores=1
+  }else if ($("#email").val()=='') {
+    $("#email").addClass('animated shake').focus()
+    errores=1
+  }else if ($("#comentario").val()=='') {
+    $("#comentario").addClass('animated shake').focus()
+    errores=1
+  }
+
+  if (errores==0) {
+    console.log("Mandando el correo")
+    var para = "sac@industriaselfer.com.mx"
+//    var para = "sergio.tafoya@gmail.com"
+    var asunto = "Formulario de contacto de la pagina"
+    var texto = ""
+    
+    texto = texto + "Nombre: "+   $("#nombre").val()    +"\n\n"
+    texto = texto + "Email: "+    $("#email").val()   +"\n\n"
+    texto = texto + "Comentario:\n"
+    texto = texto +         $("#comentario").val()  +"\n"
+    $("#resultados").hide()
+
+    $.post('mailer.php',{'para':para,'asunto':asunto,'texto':texto},function(data){
+      if (data == 'Todo bien'){
+        $("#resultados").html("<h4 class='white-text'>Gracias, nos pondremos en contacto pronto.</h4>")
+        console.log("Todo Ok")
+      }else{
+        $("#resultados").html("<h4 class='white-text'>Hubo un problema al momento de mandar su comentario, por favor inténtelo de nuevo asegurandose de llenar todos los campos.</h4>")
+        console.log("Hubo error")
+      }
+      $("#formulario").slideUp(function() {
+        $("#resultados").slideDown()
+      });
+    })
+  };
+
+
+})
+
+
+
+/////////////////// LENGUAJES
+$("#spanish").click(function(){
+  document.cookie="idioma=es";
+  location.reload()
+})
+$("#english").click(function(){
+  document.cookie="idioma=en";
+  location.reload()
+})
+$("#japanese").click(function(){
+  document.cookie="idioma=jp";
+  location.reload()
+})
+
+
+$(".en, .jp").hide()
+var galletita = document.cookie;
+if (galletita == '') {
+  galletita='idioma=es'
+};
+document.cookie=galletita;
+
+if (galletita=='idioma=jp') {$(".es,.en").remove(); $(".jp").show()}
+if (galletita=='idioma=en') {$(".es,.jp").remove(); $(".en").show()}
+console.log(galletita)
+//////////////////// LENGUAJES
+
+
 </script>
 </body>
 </html>

@@ -28,6 +28,9 @@ html{
 	overflow: hidden;
 	height: 80px;
 }
+.idiomas{
+  cursor: pointer;
+}
 </style>
 <html>
 <head>
@@ -46,13 +49,13 @@ html{
     <!-- ENCABEZADO INICIA -->
     <div class="row valign-wrapper white" id="encabezado">
       <div class="col m8 offset-m2 s12 offset-s0">
-        <img src="img/logotipoElferNuevo2.svg" alt="Logo Industrias Metálicas Elfer" class="responsive-img valign" onerror="this.src='img/logotipoElferNuevo2.png'">
+        <img src="img/logotipoElferNuevo2.png" alt="Logo Industrias Metálicas Elfer" class="responsive-img valign">
         <h3 class='hide'>Industrias Metálicas Elfer</h3>
       </div>
     </div>
 
     <div class="row valign-wrapper blue-grey darken-4 hide-on-small-only" id="menu">
-      <div class="col m12 valign">
+      <div class="col m12 valign es">
         <a href="index.html" class="opcionmenu">Inicio</a>
         <a href="infraestructura.html" class="opcionmenu">Infraestructura</a>
         <a href="productos.html" class="opcionmenu">Productos</a>
@@ -60,9 +63,25 @@ html{
         <a href="clientes.html" class="opcionmenu">Clientes</a>
         <a href="contacto.html" class="opcionmenu">Contacto</a>
       </div>
+      <div class="col m12 valign en">
+        <a href="index.html" class="opcionmenu">Home</a>
+        <a href="infraestructura.html" class="opcionmenu">Infrastructure</a>
+        <a href="productos.html" class="opcionmenu">Products</a>
+        <a href="servicios.html" class="opcionmenu">Services</a>
+        <a href="clientes.html" class="opcionmenu">Clients</a>
+        <a href="contacto.html" class="opcionmenu">Contact</a>
+      </div>
+      <div class="col m12 valign jp">
+        <a href="index.html" class="opcionmenu">スタート</a>
+        <a href="infraestructura.html" class="opcionmenu">インフラ</a>
+        <a href="productos.html" class="opcionmenu">製品</a>
+        <a href="servicios.html" class="opcionmenu">サービス</a>
+        <a href="clientes.html" class="opcionmenu">取引先</a>
+        <a href="contacto.html" class="opcionmenu">連絡先</a>
+      </div>
     </div>
 
-    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1">
+    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1 es">
       <div class="col s12 blue-grey darken-4">
         <!-- Dropdown Trigger -->
         <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Infraestructura</span></a>
@@ -75,6 +94,38 @@ html{
           <li><a class="white-text" href="servicios.html">Servicios</a></li>
           <li><a class="white-text" href="clientes.html">Clientes</a></li>
           <li><a class="white-text" href="contacto.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1 en">
+      <div class="col s12 blue-grey darken-4">
+        <!-- Dropdown Trigger -->
+        <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">Infrastructure</span></a>
+        
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content blue-grey darken-3'>
+          <li><a class="white-text" href="index.html">Inicio</a></li>
+          <li><a class="active" href="infraestructura.html">Infrastructure</a></li>
+          <li><a class="white-text" href="productos.html">Productos</a></li>
+          <li><a class="white-text" href="servicios.html">Servicios</a></li>
+          <li><a class="white-text" href="clientes.html">Clientes</a></li>
+          <li><a class="white-text" href="contacto.html">Contactos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row hide-on-med-and-up blue-grey darken-4 z-depth-1 jp">
+      <div class="col s12 blue-grey darken-4">
+        <!-- Dropdown Trigger -->
+        <a class='blue-grey darken-4 dropdown-button btn btn-large z-depth-0' href='#' data-activates='dropdown1'><span style="width:8em;display:block;">インフラ</span></a>
+        
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content blue-grey darken-3'>
+          <li><a class="white-text" href="index.html">スタート</a></li>
+          <li><a class="active" href="infraestructura.html">インフラ</a></li>
+          <li><a class="white-text" href="productos.html">製品</a></li>
+          <li><a class="white-text" href="servicios.html">サービス</a></li>
+          <li><a class="white-text" href="clientes.html">取引先</a></li>
+          <li><a class="white-text" href="contacto.html">連絡先</a></li>
         </ul>
       </div>
     </div>
@@ -100,66 +151,98 @@ html{
         </div>
       </div>
       <div class="row">
-        <div class="s12 flow-text anima1">
-          <p>En ELFER contamos con una amplia infraestructura que nos permite realizar nuestros productos y 
-            servicios de la forma más adecuada y cubrir las necesidades que demandan nuestros valiosos clientes.</p>
-            <p>Disponemos de la mejor maquinaria y nos mantenemos actualizados en la adquisicion de nueva  tecnología 
-              para  el mejor desarrollo de nuestros productos y servicios, estamos siempre en el continuo proceso de la renovación.</p>
-            </div>
-          </div>
+        <div class="s12 flow-text anima1 es">
+          <p>En ELFER contamos con una amplia infraestructura que nos permite realizar nuestros productos y servicios de la forma más adecuada y cubrir las necesidades que demandan nuestros valiosos clientes.</p>
+          <p>Disponemos de la mejor maquinaria y nos mantenemos actualizados en la adquisicion de nueva  tecnología para  el mejor desarrollo de nuestros productos y servicios, estamos siempre en el continuo proceso de la renovación.</p>
+        </div>
+        <div class="s12 flow-text anima1 jp">
+          <p>弊社の幅広いインフラは、様々な製品とサービスを提供し、大切なお客様のニーズにお応えします。</p>
+          <p>最新設備を準備、またより良い製品開発をめざして新技術の導入を常に検討します。工程は継続的に改善します。</p>
+        </div>
+        <div class="s12 flow-text anima1 en">
+          <p>En ELFER contamos con una amplia infraestructura que nos permite realizar nuestros productos y servicios de la forma más adecuada y cubrir las necesidades que demandan nuestros valiosos clientes.</p>
+          <p>Disponemos de la mejor maquinaria y nos mantenemos actualizados en la adquisicion de nueva  tecnología para  el mejor desarrollo de nuestros productos y servicios, estamos siempre en el continuo proceso de la renovación.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- PIE DE PAGINA INICIA -->
+    <div class="row blue-grey darken-3" id="piedepagina">
+      <div class="container">
+        <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
+          <p class="center-align"><img src="img/location.png" width=60></p>
+          <div class="card blue-grey darken-1" style="height:5px;"></div>
+          <p class="center-align">Circuito Logistics Lote 5 y 6</p>
+          <p class="center-align">Cluster Industrial Logistics</p>
+          <p class="center-align">Cerritos, Silao, Guanajuato C.P. 36270</p>
         </div>
 
+        <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
+          <p class="center-align"><img src="img/translate.png" width=60></p>
+          <div class="card blue-grey darken-1" style="height:5px;"></div>
+          <p class="center-align idiomas" id=spanish><img src="img/spanishflag.png" alt=""> &nbsp; Español</p>
+          <p class="center-align idiomas" id=english><img src="img/americanflag.png" alt=""> &nbsp; English</p>
+          <p class="center-align idiomas" id=japanese><img src="img/japanesseflag.png" alt=""> &nbsp; 日本語</p>
+        </div>
 
-
-
-        <!-- PIE DE PAGINA INICIA -->
-        <div class="row blue-grey darken-3" id="piedepagina">
-  <div class="container">
-    <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
-      <p class="center-align">
-        <img src="img/location.png" width=60>
-      </p>
-      <div class="card blue-grey darken-1" style="height:5px;"></div>
-      <p class="center-align">Circuito Logistics Lote 5 y 6</p>
-      <p class="center-align">Cluster Industrial Logistics</p>
-      <p class="center-align">Cerritos, Silao, Guanajuato C.P. 36270</p>
+        <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
+          <p class="center-align"><img src="img/contact.png" width=60></p>
+          <div class="card blue-grey darken-1" style="height:5px;"></div>
+          <p class="center-align es">Oficina: (472) 688 0007</p>
+          <p class="center-align es">Oficina: (472) 688 0008</p>
+          <p class="center-align en">Office: (472) 688 0007</p>
+          <p class="center-align en">Office: (472) 688 0008</p>
+          <p class="center-align jp">事務所電話: (472) 688 0007</p>
+          <p class="center-align jp">事務所電話: (472) 688 0008</p>
+          <p class="center-align">電子メール: sac@industriaselfer.com.mx</p>
+        </div>
+      </div>    
     </div>
+    <!-- PIE DE PAGINA TERMINA -->
 
-    <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
-      <p class="center-align">
-        <img src="img/translate.png" width=60>
-      </p>
-      <div class="card blue-grey darken-1" style="height:5px;"></div>
-      <p class="center-align"><img src="img/spanishflag.png" alt=""> &nbsp; Español</p>
-      <p class="center-align"><img src="img/americanflag.png" alt=""> &nbsp; English</p>
-      <p class="center-align"><img src="img/japanesseflag.png" alt=""> &nbsp; 日本語</p>
-    </div>
-
-    <div class="col s8 offset-s2 m4 grey-text text-lighten-3">
-      <p class="center-align">
-        <img src="img/contact.png" width=60>
-      </p>
-      <div class="card blue-grey darken-1" style="height:5px;"></div>
-      <p class="center-align">Oficina: (472) 688 0007</p>
-      <p class="center-align">Oficina: (472) 688 0008</p>
-      <p class="center-align">email: sac@industriaselfer.com.mx</p>
-    </div>
-  </div>    
-</div>
-        <!-- PIE DE PAGINA TERMINA -->
-
-      </div>
+  </div>
 
 
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-      setTimeout(function(){
-        $(".anima1").addClass('animated slideInRight')
-      },300);
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+  setTimeout(function(){
+    $(".anima1").addClass('animated slideInRight')
+  },300);
 
-      $(document).dblclick(function(){location.reload()});
-      </script>
-    </body>
-    </html>
+
+/////////////////// LENGUAJES
+$("#spanish").click(function(){
+  document.cookie="idioma=es";
+  location.reload()
+})
+$("#english").click(function(){
+  document.cookie="idioma=en";
+  location.reload()
+})
+$("#japanese").click(function(){
+  document.cookie="idioma=jp";
+  location.reload()
+})
+
+
+$(".en, .jp").hide()
+var galletita = document.cookie;
+if (galletita == '') {
+  galletita='idioma=es'
+};
+document.cookie=galletita;
+
+if (galletita=='idioma=jp') {$(".es,.en").remove(); $(".jp").show()}
+if (galletita=='idioma=en') {$(".es,.jp").remove(); $(".en").show()}
+console.log(galletita)
+//////////////////// LENGUAJES
+
+
+</script>
+</body>
+</html>
